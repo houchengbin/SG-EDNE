@@ -7,15 +7,13 @@ This repository is to reproduce the results of our work "**Robust Dynamic Networ
 
 Fig. The overview of proposed method. At each timestep, multiple base learners (e.g., here are three) achieve ensembles. The base learner follows a Skip-Gram embedding approach. Between consecutive timesteps, each base learner inherits its previous base learner obeying an incremental learning paradigm. To enhance the diversity among base learners, random walk with restart using different restart probability is adopted to capture different levels of local-global topology (around the affected nodes by changed edges). Embeddings from each base learner are concatenated and rescaled before downstream tasks.
 
-If you find this work is useful, please consider the following citation.
+If you find [this work](https://arxiv.org/pdf/2105.14557.pdf) is useful, please consider the following citation.
 ```
-@misc{hou2021robust,
-      title={Robust Dynamic Network Embedding via Ensembles}, 
-      author={Chengbin Hou and Guoji Fu and Peng Yang and Shan He and Ke Tang},
-      year={2021},
-      eprint={2105.14557},
-      archivePrefix={arXiv},
-      primaryClass={cs.SI}
+@article{hou2021robust,
+  title={Robust Dynamic Network Embedding via Ensembles},
+  author={Hou, Chengbin and Fu, Guoji and Yang, Peng and He, Shan and Tang, Ke},
+  journal={arXiv preprint arXiv:2105.14557},
+  year={2021}
 }
 ```
 
