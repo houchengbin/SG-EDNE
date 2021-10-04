@@ -1,4 +1,4 @@
-gensim==4.0.0b0
+gensim==4.1.2
 six==1.15.0
 numpy==1.19.4
 networkx==2.5
@@ -7,7 +7,11 @@ scikit-learn==0.23.2
 # python >=3.8
 # e.g. "conda create -n SG-EDNE python=3.8"
 
-# if an error occurs in gensim, please:
+# ------------------------
+# NB: the results in the paper were produced in gensim==4.0.0b0, which is however not available now. 
+# Therefore, we test our code in the latest gensim version, i.e., gensim==4.1.2, which works properly now. 
+# But we are not sure whether the reuslts would be exactly the same as that produced by gensim==4.0.0b0.
+# If 'pip install gensim==4.0.0b0' get an error, please try:
 # pip uninstall gensim
 # pip install gensim
 # pip uninstall gensim
